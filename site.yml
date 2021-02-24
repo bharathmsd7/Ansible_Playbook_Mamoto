@@ -1,6 +1,8 @@
-- hosts: prod
+- hosts: all
+  gather_facts: true
   become: yes
   become_user: root
+  become_method: sudo
   vars_files:
     - group_vars/all
     - host_vars/site
