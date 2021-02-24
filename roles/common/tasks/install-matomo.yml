@@ -27,12 +27,12 @@
     group: 'www-data'
     mode: '0750'
 
-- name: Matomo | Automatically archive reports
-  cron:
-    name: 'archive matomo reports'
-    minute: '5'
-    user: 'www-data'
-    job: "/usr/bin/php /var/www/html/console core:archive --url=https://{{ certificate_domain }} > /var/log/matomo/archive.log"
+#- name: Matomo | Automatically archive reports
+#  cron:
+#    name: 'archive matomo reports'
+#    minute: '5'
+#    user: 'www-data'
+#    job: "/usr/bin/php /var/www/html/console core:archive --url=https://{{ certificate_domain }} > /var/log/matomo/archive.log"
 
 - name: Matomo | Remove download
   file:
