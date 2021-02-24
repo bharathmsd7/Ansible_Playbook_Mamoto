@@ -6,20 +6,6 @@ With support for local provisioning via Vagrant (useful to quickly testing chang
 
 Both local and non-local provisions were tested on a [Ubuntu 18.04](http://releases.ubuntu.com/18.04/) instance.
 
-**Blog post:** https://jonbake.com/blog/2019/08/17/setting-up-a-personal-matamo-instance.html
-
-## Provisioning Locally
-
-* Requires [Vagrant](https://www.vagrantup.com/) to be installed.
-
-Simply run:
-
-```
-vagrant up
-```
-
-Then navigate to https://localhost:8443/. Note: because it is using a self-signed certificate, you will receive a warning when opening the page within a browser.
-
 ## Provisioning a Production, i.e. Remote, Site
 
 * Requires [Ansible](https://docs.ansible.com/ansible/latest/installation_guide/intro_installation.html) to be installed.
