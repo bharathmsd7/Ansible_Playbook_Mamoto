@@ -13,11 +13,11 @@
   command: bsdtar --strip-components=1 -xvf /tmp/matomo.zip -C /var/www/html/
   when: matomo_install.stat.exists == false
 
-- name: Matomo | Set force_ssl to true
-  lineinfile:
-    path: /var/www/html/config/config.ini.php
-    line: 'force_ssl = 1'
-    insertafter: '\[General\]'
+#- name: Matomo | Set force_ssl to true
+#  lineinfile:
+#    path: /var/www/html/config/config.ini.php
+#    line: 'force_ssl = 1'
+#    insertafter: '\[General\]'
 
 - name: Matomo | Create log directory
   file:
